@@ -1,0 +1,25 @@
+syntax = "proto3";
+// 生成的包名
+option java_package="com.pancm.protobuf";
+//生成的java名
+option java_outer_classname = "ResponseFile";
+
+message ResponseMsg {
+
+	// 开始 读取点
+	int64 start = 1;
+
+	// 文件的 MD5值
+	string fileName = 2;
+
+	// 文件下载地址
+	string fileUrl = 3;
+
+	// 上传是否结束
+	bool end = 4;
+
+	// 进度
+	string completedByte = 5;
+
+} 
+
